@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #28b0b9;
+}
+
+body,
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 600px;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.start-btn {
+    background-color: #393d3e;
+    color: #fff;
+    height: 60px;
+    padding: 0 40px;
+    font-size: 20px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    border-radius: 9999px;
+    text-shadow: 0px 2px 3px rgb(0 0 0 / 40%), 0px 2px 5px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+    transition: opacity .3s ease;
+}
+
+.start-btn:hover {
+    opacity: .85;
+}
+
+.apple_icon {
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.apple_icon1 {
+    background-color: #fd5e59;
+    border: 1px solid #d83836;
+}
+
+.apple_icon2 {
+    background-color: #ffbb3b;
+    border: 1px solid #d69317;
+}
+
+.apple_icon3 {
+    background-color: #34c748;
+    border: 1px solid #1bad2f;
+}
+
+.app {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 7.5px;
+    overflow: hidden;
+    background-color: #1F1E1E;
+}
+
+.mac-terminal {
+    padding: 5px 10px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    background: #393d3e;
+}
+
+.mac-terminal small {
+    font-size: 12px;
+    color: #fff;
+}
+
+.question-section {
+    margin-bottom: 25px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.app-body {
+    padding: 25px 30px;
+    color: #fff;
+}
+
+.answer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.answer-text {
+    user-select: none;
+    pointer-events: none;
+}
+
+.answer-section button {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    background-color: #3c3c3c;
+    text-align: left;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .85;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer-section button svg {
+    color: #ddd;
+    font-size: 22px;
+}
+
+.answer-section button {
+    opacity: .85;
+}
+
+.answer-section button[disabled="disabled"] {
+    opacity: .5;
+}
+
+.quiz-box .app-header {
+    position: relative;
+}
+
+.quiz-box .time-line {
+    position: absolute;
+    top: 100%;
+    height: 2px;
+    background-color: red;
+    transition: width 1s linear;
+}
+
+.answer-section button.active {
+    opacity: 1;
+    color: #ffffff;
+}
+
+.answer-section button:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.app-footer {
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    height: 55px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 30px;
+}
+
+.app-footer .order {
+    opacity: .7;
+}
+
+.app-footer .next-btn {
+    font-size: 15px;
+    border: none;
+    background-color: #393d3e;
+    color: #fff;
+    height: 30px;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+
+.app-body .rules {
+    list-style-position: inside;
+    font-size: 15px;
+}
+
+.app-body .rules li {
+    margin: 5px 0;
+    color: #eee;
+    font-weight: 300;
+}
+
+.app-body .title {
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+.rules .app-footer,
+.result .app-footer {
+    justify-content: end;
+}
+
+.result .app-body .title {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.rules .app-footer button,
+.result .app-footer button {
+    font-size: 14px;
+    height: 30px;
+    padding: 0 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-shadow: 0px 2px 3px rgb(0 0 0 / 40%), 0px 2px 5px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+
+.exit-btn {
+    background-color: #ff413e;
+    margin-right: 10px;
+}
+
+.contiune-btn {
+    background-color: #009c0d;
+}
